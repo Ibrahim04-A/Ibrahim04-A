@@ -52,22 +52,24 @@ body.night
     margin: 10px 0;
     transition: 0.5s;
 }
-.content button
+.content a
 {
     background-color: #2196f3;
+    color: #333;
+    text-decoration: none;
     border: none;
     outline: none;
-    padding: 10px 20px 15px 20px;
+    padding: 15px 25px;
     letter-spacing: 0.05em;
     font-weight: 600;
     transition: 0.5s;
 }
-.content button:hover span
+.content a:hover span
 {
     border-bottom: 3px solid;
 }
 
-.content button .cv
+.content a .cv
 {
     position: relative;
     top: 5px;
@@ -124,7 +126,7 @@ body.night .dayNight ion-icon:nth-child(2)
 {
     display: block;
 }
-body.night .logo, body.night .content h2, body.night .content p,
+body.night .logo, body.night .content h2, body.night .content p, body.night .content a,
 body.night .content button, body.night .sci li a, body.night .nav-link
 {
     color: #fff;
