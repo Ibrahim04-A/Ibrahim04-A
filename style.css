@@ -52,7 +52,7 @@ body.night
     margin: 10px 0;
     transition: 0.5s;
 }
-.content a
+.content .file
 {
     background-color: #2196f3;
     color: #333;
@@ -64,11 +64,19 @@ body.night
     font-weight: 600;
     transition: 0.5s;
 }
-.content a:hover span
+.content .file:nth-child(2)
+{
+    padding: 13px 25px;
+}
+
+.content .file:hover span
 {
     border-bottom: 3px solid;
 }
-
+.dropdown-item:hover
+{
+    background-color: #e91e63;
+}
 .content a .cv
 {
     position: relative;
@@ -112,7 +120,7 @@ body.night
     font-size: 2em;
     cursor: pointer;
 }
-body.night .dayNight
+body.night .dayNight, body.night .dropdown-menu
 {
     background-color: #444;
     color: #fff;
