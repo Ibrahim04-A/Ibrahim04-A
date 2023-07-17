@@ -125,7 +125,11 @@ body.night .dayNight ion-icon:nth-child(2)
     display: block;
 }
 body.night .logo, body.night .content h2, body.night .content p,
-body.night .content button, body.night .sci li a
+body.night .content button, body.night .sci li a, body.night .nav-link
 {
     color: #fff;
+}
+body.night .sci li a:hover
+{
+    color: #2196f3;
 }
