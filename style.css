@@ -1,0 +1,131 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    list-style: none;
+}
+body.night
+{
+    background-color: #333333;
+}
+.navbar
+{
+    padding: 1% 5%;
+    transition: 0.5s;
+}
+.logo
+{
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.logo span
+{
+    color: #2196f3;
+}
+.content h3
+{
+    font-size: 2em;
+    color: #333;
+    font-weight: 200;
+    transition: 0.5s;
+}
+.content h2
+{
+    font-size: 3em;
+    color: #333;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.content h2 span
+{
+    color: #e91e63;
+}
+.content p
+{
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+.content button
+{
+    background-color: #2196f3;
+    border: none;
+    outline: none;
+    padding: 10px 20px 15px 20px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content button:hover span
+{
+    border-bottom: 3px solid;
+}
+
+.content button .cv
+{
+    position: relative;
+    top: 5px;
+    right: 5px;
+    color: #e91e63;
+    font-size: 2em;
+}
+.sci ul
+{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 30px;
+}
+.sci li a
+{
+    text-decoration: none;
+    font-size: 2em;
+    color: #333333;
+}
+.sci li a:hover
+{
+    color: #2196f3;
+}
+.dayNight
+{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 2em;
+    cursor: pointer;
+}
+body.night .dayNight
+{
+    background-color: #444;
+    color: #fff;
+}
+.dayNight ion-icon:nth-child(2),
+body.night .dayNight ion-icon:nth-child(1)
+{
+    display: none;
+}
+body.night .dayNight ion-icon:nth-child(2)
+{
+    display: block;
+}
+body.night .logo, body.night .content h2, body.night .content p,
+body.night .content button, body.night .sci li a
+{
+    color: #fff;
+}
